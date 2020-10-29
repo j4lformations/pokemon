@@ -1,6 +1,9 @@
 <?php
 
-
+/**
+ * Class PokemonTerrestre
+ * @author Joachim Zadi
+ */
 abstract class PokemonTerrestre extends Pokemon
 {
     private $nbPatte;
@@ -28,12 +31,12 @@ abstract class PokemonTerrestre extends Pokemon
         $this->taille = $taille;
     }
 
-    protected function getVitesse(): float
+    public function getVitesse(): float
     {
         return 3 * $this->nbPatte * $this->taille;
     }
 
-    public function __toString()
+    public function __toString():string
     {
         $affichage = "<br>J'ai $this->nbPatte pattes" . "<br>Ma taille est $this->taille m";
         return parent::__toString() . $affichage;

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class PokemonMarin
+ * @author Joachim Zadi
+ */
 abstract class PokemonMarin extends Pokemon
 {
     private $nbNageoire;
@@ -15,9 +19,9 @@ abstract class PokemonMarin extends Pokemon
         return $this->nbNageoire;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
-        $affichage = "<br>J'ai $this->nbNageoire nageoires";
-        return parent::__toString() . $affichage;
+        $affichage = "<br>J'ai {$this->nbNageoire} nageoires";
+        return "<h4>".parent::__toString() . $affichage."</h4>";
     }
 }

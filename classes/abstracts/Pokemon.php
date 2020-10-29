@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class Pokemon
+ * @author Joachim Zadi
+ */
 abstract class Pokemon
 {
     private $nom;
@@ -33,7 +37,7 @@ abstract class Pokemon
 
     abstract protected function getVitesse(): float;
 
-    public function __toString()
+    public function __toString(): string
     {
         $affichage = "Je suis le Pokemon $this->nom<br>" .
             "Mon poids est $this->poids kg" .

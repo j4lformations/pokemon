@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class Sportif
+ * @author Joachim Zadi
+ */
 class Sportif extends PokemonTerrestre
 {
     /**
@@ -13,7 +17,12 @@ class Sportif extends PokemonTerrestre
         $this->freqCardiaque = $freqCardiaque;
     }
 
-    public function __toString()
+    public function getFreqCardiaque(): float
+    {
+        return $this->freqCardiaque;
+    }
+
+    public function __toString(): string
     {
         $affichage = "<br>Ma frequence cardiaque est $this->freqCardiaque pulsation/min";
         return "<h4>" . parent::__toString() . $affichage . "</h4>";
