@@ -17,11 +17,6 @@ class Sportif extends PokemonTerrestre
         $this->freqCardiaque = $freqCardiaque;
     }
 
-    public function getFreqCardiaque(): float
-    {
-        return $this->freqCardiaque;
-    }
-
     public function __toString(): string
     {
         $affichage = "<br>Ma frequence cardiaque est $this->freqCardiaque pulsation/min";

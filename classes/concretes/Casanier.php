@@ -17,16 +17,6 @@ class Casanier extends PokemonTerrestre
         $this->nbHeure = $nbHeure;
     }
 
-    public function getNbHeure(): int
-    {
-        return $this->nbHeure;
-    }
-
-    public function setNbHeure(int $nbHeure): void
-    {
-        $this->nbHeure = $nbHeure;
-    }
-
     public function __toString(): string
     {
         $description = "<br>Je regarde la télé " . $this->nbHeure . "h par jour.<br>";
